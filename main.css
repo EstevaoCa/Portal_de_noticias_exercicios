@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  background: #2f3640;
+  padding: 16px 0;
+  color: #f5f6fa;
+}
+
+header .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 16px;
+}
+
+header li a {
+  color: #f5f6fa;
+  text-decoration: none;
+}
+
+.conteiner {
+  width: 100%;
+  margin: 8px auto;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article article img {
+  width: 100%;
+}
+
+.section {
+  padding: 16px 0;
+}
+
+.article article {
+  width: calc(30% - 16px);
+  margin-right: 16px;
+}
+
+.section h2,
+.article article {
+  margin-bottom: 16px;
+}
+
+.article article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.article article a {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.article article a:hover {
+  text-decoration: underline;
+}
+
+.article article p,
+.article article a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.article article h3 {
+  font-size: 24px;
+}
+
+.section h2 {
+  font-size: 32px;
+}
+
+#sports {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .article article a {
+  background-color: rgba(0, 255, 0, 0.8);
+  color: #009432;
+}
+
+#economy {
+  background-color: #f8f59f;
+}
+
+#economy .article article a {
+  background-color: #ff9f1a;
+}
+
+#entreterimento {
+  background-color: #f39c12;
+}
+
+#tecnologia {
+  background-color: #3498db;
+}
+
+#entreterimento .article article a {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+#tecnologia .article article a {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+/* Adicionando regra de mídia para ajustar em dispositivos menores */
+@media screen and (max-width: 800px) {
+  .article article {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .article article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article article h3 {
+    font-size: 18px;
+  }
+
+  .article article a {
+    padding: 6px;
+  }
+}
